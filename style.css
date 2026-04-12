@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -10,30 +11,31 @@ body {
 }
 
 .theIndex {
-  font-size: 18px;
+  right: 2vmax;
+  row-gap: 1.2vmax;
   position: fixed;
-  right: 2em;
   height: 100%;
   display: flex;
   z-index: 999;
   flex-direction: column;
-  row-gap: 1em;
   justify-content: center;
+  mix-blend-mode: hard-light;
 
   a[data-scroll-spy] {
     display: block;
     margin-inline: auto;
-    width: .5em;
-    height: .5em;
     background-color: transparent;
-    box-shadow: inset 3px 3px 5px greenyellow, inset -3px -3px 5px greenyellow;
+    width: 0.7vmax;
+    height: 0.7vmax;
+    box-shadow: inset 0.2vmax 0.2vmax 0.33vmax greenyellow,
+      inset -0.2vmax -0.2vmax 0.33vmax greenyellow;
     border-radius: 50%;
-    transition: all .1s ease;
+    border: 0.05vmax dotted #fff;
+    transition: transforms 0.1s ease;
   }
 
   a.active {
-    width: 1em;
-    height: 1em;
+    transform: scale(2);
   }
 }
 .container {
@@ -51,8 +53,8 @@ body {
   .box {
     position: absolute;
     width: fit-content;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
+    border-top: 0.13vmax solid white;
+    border-left: 0.13vmax solid white;
 
     * {
       padding: 0;
@@ -62,42 +64,41 @@ body {
     }
 
     h2 {
-      padding: 2rem;
-      font-size: 1.3rem;
-      font-family:Helvetica, sans-serif;
-
+      padding: 2vmax;
+      font-size: 1.2vmax;
+      font-family: Helvetica, sans-serif;
     }
   }
 
   .box-top-left {
-    left: 3rem;
-    top: 3rem;
+    left: 2vmax;
+    top: 2vmax;
   }
 
   .box-top-right {
-    right: 3rem;
-    top: 3rem;
+    right: 2vmax;
+    top: 2vmax;
   }
 
   .box-top-right,
   .box-bottom-right {
     border-left: none;
-    border-right: 2px solid white;
+    border-right: 0.13vmax solid white;
   }
 
   .box-bottom-left {
-    left: 3rem;
+    left: 2vmax;
   }
 
   .box-bottom-right {
-    right: 3rem;
+    right: 2vmax;
   }
 
   .box-bottom-left,
   .box-bottom-right {
-    bottom: 3rem;
+    bottom: 2vmax;
     border-top: none;
-    border-bottom: 2px solid white;
+    border-bottom: 0.13vmax solid white;
   }
 }
 .container-002 {
@@ -123,32 +124,4 @@ body {
 }
 .container-009 {
   background-image: url('fotos/img9.avif');
-}
-
-@media (width <= 1000px) {
-  html {
-    font-size: 12px;
-  }
-  .theIndex {
-    right: 28px;
-  }
-}
-
-@media (width <= 600px) and (orientation: portrait){
-  .container-001 {
-    .box-bottom-left,
-    .box-top-right {
-      display: none;
-    }
-    .box-bottom-right {
-      bottom: 5rem;
-    }
-  }
-  .container {
-    background-attachment: scroll;
-  }
-  .theIndex {
-    width: fit-content;
-    right: 1.5rem;
-  }
 }
