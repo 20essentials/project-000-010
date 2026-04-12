@@ -1,9 +1,7 @@
-![n1](preview/n1.avif)
-![n2](preview/n2.avif)
-![n3](preview/n3.avif)
-![n4](preview/n4.avif)
-![n5](preview/n5.avif)
-![n6](preview/n6.avif)
-![n7](preview/n7.avif)
-![n8](preview/n8.avif)
-![n9](preview/n9.avif)
+[![Foto Preview](preview/project-10.avif)](https://20essentials.github.io/project-000-010)
+
+<div align="center" style="display: flex; justify-content: center;">
+  <a  href="https://github.com/20essentials/project-000-009" target="_blank">&#8592;</a>
+  &nbsp;&nbsp;
+  <a  href="https://github.com/20essentials/project-000-011" target="_blank">&#8594;</a>
+</div>
